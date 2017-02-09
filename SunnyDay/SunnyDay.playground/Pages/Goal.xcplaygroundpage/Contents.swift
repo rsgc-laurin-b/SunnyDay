@@ -16,12 +16,6 @@ import PlaygroundSupport
 // Create a new canvas
 let canvas = Canvas(width: 500, height: 400)
 
-//// Draw a circle in the middle of the canvas without a fill
-//canvas.drawShapesWithBorders = true
-//canvas.drawShapesWithFill = false
-//canvas.defaultBorderWidth = 5
-//canvas.drawEllipse(centreX: canvas.width / 2, centreY: canvas.height / 2 , width: 100, height: 100)
-
 
 // setting background to blue
 canvas.fillColor = Color(hue: 195, saturation: 100, brightness: 100, alpha: 100)
@@ -66,6 +60,54 @@ canvas.drawEllipse(centreX: 500, centreY: 350, width: 100, height: 100)
 canvas.drawShapesWithBorders = false
 canvas.fillColor = Color.white
 canvas.drawEllipse(centreX: 450, centreY: 400, width: 100, height: 100)
+
+
+// Draw a circle in the middle of the canvas without a fill
+
+
+// First loop
+canvas.drawShapesWithBorders = true
+canvas.drawShapesWithFill = false
+canvas.defaultBorderWidth = 25
+canvas.borderColor = Color.purple
+canvas.drawEllipse(centreX: 250, centreY: 0, width: 225, height: 200)
+
+// Second Loop
+canvas.drawShapesWithBorders = true
+canvas.drawShapesWithFill = false
+canvas.defaultBorderWidth = 25
+canvas.borderColor = Color.blue
+canvas.drawEllipse(centreX: 250, centreY: 0, width: 275, height: 250)
+
+
+// Third Loop
+canvas.drawShapesWithBorders = true
+canvas.drawShapesWithFill = false
+canvas.defaultBorderWidth = 25
+canvas.borderColor = Color.green
+canvas.drawEllipse(centreX: 250, centreY: 0, width: 325, height: 300)
+
+
+// Fourth Loop
+canvas.drawShapesWithBorders = true
+canvas.drawShapesWithFill = false
+canvas.defaultBorderWidth = 25
+canvas.borderColor = Color.yellow
+canvas.drawEllipse(centreX: 250, centreY: 0, width: 375, height: 350)
+
+// fifth Loop
+canvas.drawShapesWithBorders = true
+canvas.drawShapesWithFill = false
+canvas.defaultBorderWidth = 25
+canvas.borderColor = Color.orange
+canvas.drawEllipse(centreX: 250, centreY: 0, width: 425, height: 400)
+
+// Sixth Loop
+canvas.drawShapesWithBorders = true
+canvas.drawShapesWithFill = false
+canvas.defaultBorderWidth = 25
+canvas.borderColor = Color.red
+canvas.drawEllipse(centreX: 250, centreY: 0, width: 475, height: 450)
 //: ## Template code
 //: The code below is necessary to see the result of your work in the Assistant Editor at right. Please do not remove.
 PlaygroundPage.current.liveView = canvas.imageView
